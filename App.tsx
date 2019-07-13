@@ -11,14 +11,18 @@
 import * as React from 'react'
 import { View } from 'react-native'
 import Routes from './src/routes'
+import { Provider } from 'mobx-react'
+import stores from './src/stores'
 
 type IApp = {}
 class App extends React.Component<IApp> {
   public render() {
     return (
-      <View style={{ flex: 1 }}>
-        <Routes />
-      </View>
+      <Provider {...stores}>
+        <View style={{ flex: 1 }}>
+          <Routes />
+        </View>
+      </Provider>
     )
   }
 }

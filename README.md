@@ -18,6 +18,8 @@ yarn install
 ###  相关文档
 - [React Native](https://reactnative.cn/)
 - [React Navigation](https://reactnavigation.org/docs/zh-Hans/getting-started.html)
+- [MobX](https://cn.mobx.js.org/)
+- [MobX React](https://github.com/mobxjs/mobx-react)
 
 ###  常见错误及解决方案
 - [null is not an object ( evaluating 'RNGestureHandlerModule.Direction')](https://github.com/472647301/react-native-demo/issues/1)
