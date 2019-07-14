@@ -12,8 +12,8 @@ class DetailScreen extends React.Component<IDetail> {
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Detail Screen</Text>
         <Button
-          title="Go to Home"
-          onPress={() => navigation.navigate('Home')}
+          title="Go to WebView"
+          onPress={() => navigation.navigate('WebView')}
         />
       </View>
     )
