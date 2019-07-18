@@ -14,6 +14,14 @@ import Routes from './src/routes'
 import { Provider } from 'mobx-react'
 import stores from './src/stores'
 
+// 全局对象
+declare global {
+  interface Window {
+    [key: string]: any
+  }
+}
+
+
 type IApp = {}
 class App extends React.Component<IApp> {
   public render() {
