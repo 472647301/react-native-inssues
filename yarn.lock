@@ -1618,6 +1618,11 @@ buffer-from@^1.0.0:
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
   integrity sha512-MQcXEUbCKtEo7bhqEs6560Hyd4XaovZlO/k9V3hjVUF/zwW7KBVdSK4gIt/bzwS9MbR5qob+F5jusZsb0YQK2A==
 
+byron-highcharts@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/byron-highcharts/-/byron-highcharts-1.0.2.tgz#459bb0b7ce70e0c6be3c1613b54ee824180b1926"
+  integrity sha512-1ug9Y/yqnef1wU+Porkln/WhtOC14Oimrr8HZHxe68twKuqr/u6XnAWKhxOcGloXyufbDRN0687/A/HzVI8HEg==
+
 byron-stomp@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/byron-stomp/-/byron-stomp-1.0.1.tgz#8416f4c3e81ddb24f2b7a2542b44310b86aa0c28"

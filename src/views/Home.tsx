@@ -24,6 +24,10 @@ class HomeScreen extends React.Component<IHome> {
           onPress={() => navigation.navigate('Detail')}
         />
         <Button
+          title="Go to HighChart"
+          onPress={() => navigation.navigate('HighChart')}
+        />
+        <Button
           title="Change MobX Number"
           onPress={() => Timer.changeNumber()}
         />

@@ -4,11 +4,13 @@ import { createStackNavigator } from 'react-navigation'
 import Home from '../views/Home'
 import Detail from '../views/Detail'
 import WebView from '../views/WebView'
+import HighChart from '../views/HighCharts'
 
 const AppNavigator = createStackNavigator({
   Home: Home,
   Detail: Detail,
-  WebView: WebView
+  WebView: WebView,
+  HighChart: HighChart
 })
 
 export default createAppContainer(AppNavigator)
