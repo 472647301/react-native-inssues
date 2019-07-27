@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Button, View, Text } from 'react-native'
 import { NavigationScreenProp } from 'react-navigation'
 import SockJS from 'sockjs-client'
-import stompjs from 'byron-stomp'
+import stompjs from 'react-native-byron-stomp'
 
 type IDetail = {
   navigation: NavigationScreenProp<{}>

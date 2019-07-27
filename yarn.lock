@@ -1618,16 +1618,6 @@ buffer-from@^1.0.0:
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
   integrity sha512-MQcXEUbCKtEo7bhqEs6560Hyd4XaovZlO/k9V3hjVUF/zwW7KBVdSK4gIt/bzwS9MbR5qob+F5jusZsb0YQK2A==
 
-byron-highcharts@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/byron-highcharts/-/byron-highcharts-1.0.2.tgz#459bb0b7ce70e0c6be3c1613b54ee824180b1926"
-  integrity sha512-1ug9Y/yqnef1wU+Porkln/WhtOC14Oimrr8HZHxe68twKuqr/u6XnAWKhxOcGloXyufbDRN0687/A/HzVI8HEg==
-
-byron-stomp@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/byron-stomp/-/byron-stomp-1.0.1.tgz#8416f4c3e81ddb24f2b7a2542b44310b86aa0c28"
-  integrity sha512-PLO+Ib/8hLtU7qbScbv8xD3wOlF+Bq0l+JQZBggQQV9l8jpUvlJWlePpQtJ054S5FyBRymw05gvR7WoL4Z+sow==
-
 bytes@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.0.0.tgz#d32815404d689699f85a4ea4fa8755dd13a96048"
@@ -5334,6 +5324,21 @@ react-lifecycles-compat@^3.0.2, react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-native-byron-highcharts@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-byron-highcharts/-/react-native-byron-highcharts-1.0.0.tgz#8f7e6d56e124042e29fc6f7a2b6392c6e2157094"
+  integrity sha512-sTuv5EY9PQ7aUhrUf4UTc1HGrksGejNH6AGnRPmrpZ32u5TuqLc0mg/efkJGstJ7ZxCAO2SKIFUCj6Y8d7b95w==
+
+react-native-byron-kline@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/react-native-byron-kline/-/react-native-byron-kline-1.0.9.tgz#c5e296253db01d030dfaf1aeefe938bf40ceecfd"
+  integrity sha512-dpxK20O42jbJL/5KwXvX1Dur1fIEsCxL45vQhePfcJ8z4jBEvo307Es72tDqn/QJ8i1lXK8DZJxKDrb/CEnqGw==
+
+react-native-byron-stomp@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-byron-stomp/-/react-native-byron-stomp-1.0.0.tgz#a96569d0456c87fa0ac37ab62fd1eb92edea07a7"
+  integrity sha512-68xyCKAKXGT0GKf0g+yQyz5cil78mjSDPISB3fz6SMtYaZzQcD95iZk3b/AVGEHumqCHbkOiucSg143q6QQACA==
+
 react-native-gesture-handler@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.3.0.tgz#d0386f565928ccc1849537f03f2e37fd5f6ad43f"
@@ -5342,11 +5347,6 @@ react-native-gesture-handler@^1.3.0:
     hoist-non-react-statics "^2.3.1"
     invariant "^2.2.2"
     prop-types "^15.5.10"
-
-react-native-kline@1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/react-native-kline/-/react-native-kline-1.0.9.tgz#cc6eab008f6906196c2b6c880194bb97e1a5cce0"
-  integrity sha512-rGXSuPRfXYXwhgMMn45O2c6q29qA5yaAwVGMZtznUZh3BcZAFKXRkV8g2jBmGaJ6tAr6OzFNB7/gM6sy1zqtjA==
 
 react-native-safe-area-view@^0.14.1:
   version "0.14.6"
