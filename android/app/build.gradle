@@ -144,7 +144,7 @@ android {
     }
     signingConfigs {
         debug {
-            storeFile file('debug.keystore')
+//            storeFile file('debug.keystore')
             storePassword 'android'
             keyAlias 'androiddebugkey'
             keyPassword 'android'
@@ -188,6 +188,7 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-yusha-customkeyboard')
     implementation project(':react-native-webview')
     implementation project(':react-native-gesture-handler')
     implementation fileTree(dir: "libs", include: ["*.jar"])

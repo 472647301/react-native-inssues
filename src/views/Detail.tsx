@@ -1,8 +1,10 @@
 import * as React from 'react'
-import { Button, View, Text } from 'react-native'
+import { Button, View, Text, TextInput, Keyboard } from 'react-native'
 import { NavigationScreenProp } from 'react-navigation'
 import SockJS from 'sockjs-client'
-import stompjs from 'byron-stomp'
+import stompjs from 'react-native-byron-stomp'
+import * as CustomKeyboard from 'react-native-yusha-customkeyboard'
+require('./test')
 
 type IDetail = {
   navigation: NavigationScreenProp<{}>
@@ -30,6 +32,7 @@ class DetailScreen extends React.Component<IDetail> {
 
   public componentDidMount() {
     // this.testSocket()
+    // Keyboard.dismiss()
     // sock.onopen = function() {
     //   console.log('open')
     //   sock.send('test')
@@ -46,8 +49,16 @@ class DetailScreen extends React.Component<IDetail> {
   public render() {
     const { navigation } = this.props
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <View style={{ flex: 1 }}>
         <Text>Detail Screen</Text>
+        {/* <TextInput
+          style={{ borderColor: '#eee', borderWidth: 1, width: 200 }}
+        /> */}
+        <CustomKeyboard.CustomTextInput
+        style={{ borderColor: '#eee', borderWidth: 1, width: 200 }}
+          customKeyboardType="numberKeyBoardWithDot"
+          placeholder="numberKeyBoardWithDot"
+        />
         <Button
           title="Go to WebView"
           onPress={() => navigation.navigate('WebView')}
