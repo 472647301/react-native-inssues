@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Button, View, Text } from 'react-native'
 import { NavigationScreenProp } from 'react-navigation'
-import { sendMessageHtml, IOnMessage } from 'react-native-byron-highcharts'
+import { sendMessageHtml, IOnMessage } from 'byron-highcharts'
 import { WebView } from 'react-native-webview'
 
 type IHChart = {
@@ -147,7 +147,7 @@ class HChartScreen extends React.Component<IHChart> {
             style={{ flex: 1 }}
             originWhitelist={['*']}
             ref={ref => (this.chart = ref)}
-            source={require('react-native-byron-highcharts/dist/index.html')}
+            source={require('byron-highcharts/dist/index.html')}
             onMessage={evt => this.onMessage(evt.nativeEvent.data)}
             onLoadEnd={this.onLoadEnd.bind(this)}
           />

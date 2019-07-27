@@ -2,10 +2,10 @@ import * as React from 'react'
 import { View, Button, ActionSheetIOS } from 'react-native'
 import { WebView } from 'react-native-webview'
 import { NavigationScreenProp } from 'react-navigation'
-import { sendMessageHtml } from 'react-native-byron-kline'
-import { IOnMessage, Bar } from 'react-native-byron-kline'
+import { sendMessageHtml } from 'react-native-kline'
+import { IOnMessage, Bar } from 'react-native-kline'
 import SockJS from 'sockjs-client'
-import stompjs from 'react-native-byron-stomp'
+import stompjs from 'byron-stomp'
 import moment from 'moment'
 import axios from 'axios'
 
@@ -185,7 +185,7 @@ class WebViewScreen extends React.Component<IWebView> {
             style={{ flex: 1 }}
             originWhitelist={['*']}
             ref={ref => (this.chart = ref)}
-            source={require('react-native-byron-kline/dist/index.html')}
+            source={require('react-native-kline/dist/index.html')}
             onMessage={evt => this.onMessage(evt.nativeEvent.data)}
             onLoadEnd={this.onLoadEnd.bind(this)}
             // onLoadEnd={() => {
