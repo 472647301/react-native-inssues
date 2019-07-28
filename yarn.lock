@@ -1353,7 +1353,7 @@ asap@~2.0.3:
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
   integrity sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=
 
-asn1@~0.2.3:
+asn1@^0.2.4, asn1@~0.2.3:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/asn1/-/asn1-0.2.4.tgz#8d2475dfab553bb33e77b54e59e880bb8ce23136"
   integrity sha512-jxwzQpLQjSmWXgwaCZE9Nz+glAG01yF1QnWgbhGwHI5A6FRIEY6IVqtHhIepHqI7/kyEyQEagBC5mBEFlIYvdg==
@@ -5329,10 +5329,17 @@ react-native-byron-highcharts@^1.0.0:
   resolved "https://registry.yarnpkg.com/react-native-byron-highcharts/-/react-native-byron-highcharts-1.0.0.tgz#8f7e6d56e124042e29fc6f7a2b6392c6e2157094"
   integrity sha512-sTuv5EY9PQ7aUhrUf4UTc1HGrksGejNH6AGnRPmrpZ32u5TuqLc0mg/efkJGstJ7ZxCAO2SKIFUCj6Y8d7b95w==
 
-react-native-byron-kline@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/react-native-byron-kline/-/react-native-byron-kline-1.0.9.tgz#c5e296253db01d030dfaf1aeefe938bf40ceecfd"
-  integrity sha512-dpxK20O42jbJL/5KwXvX1Dur1fIEsCxL45vQhePfcJ8z4jBEvo307Es72tDqn/QJ8i1lXK8DZJxKDrb/CEnqGw==
+react-native-byron-kline@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-byron-kline/-/react-native-byron-kline-1.1.0.tgz#c5f1b174feb1a85cd055a2e92fe7492bfca45880"
+  integrity sha512-7zguFJ2gKIP6N44/LyH3WdKorB9nMtsVpfdXbnLVQBm1GCgXAyzkw4Uins3/TIZ8melCzTOVGQmCUs3o0s6vgg==
+
+react-native-byron-rsa@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-byron-rsa/-/react-native-byron-rsa-1.0.0.tgz#86027e0f277cb3c28d4735eb2ad12cbf896d4e9d"
+  integrity sha512-9EmMR+t0orewxhbvF99Yt2Sbq1pL9BWX17hZaanpxhdER9qUWy72ZrI882siesJM639o37vz9VOa+ty0tHI1CA==
+  dependencies:
+    asn1 "^0.2.4"
 
 react-native-byron-stomp@^1.0.0:
   version "1.0.0"

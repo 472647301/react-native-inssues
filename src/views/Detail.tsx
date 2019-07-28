@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Button, View, Text } from 'react-native'
+import { Button, View, Text, TextInput, Keyboard } from 'react-native'
 import { NavigationScreenProp } from 'react-navigation'
 import SockJS from 'sockjs-client'
 import stompjs from 'react-native-byron-stomp'
@@ -43,14 +43,27 @@ class DetailScreen extends React.Component<IDetail> {
     // }
   }
 
+  public state = {
+    number: ''
+  }
+
   public render() {
     const { navigation } = this.props
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Detail Screen</Text>
+        <TextInput
+          style={{ width: 200, borderWidth: 1, borderColor: '#eee' }}
+          onFocus={() => Keyboard.dismiss()}
+          value={this.state.number}
+        />
         <Button
           title="Go to WebView"
           onPress={() => navigation.navigate('WebView')}
+        />
+        <Button
+          title="Change Input"
+          onPress={() => this.setState({ number: this.state.number + '1' })}
         />
       </View>
     )
