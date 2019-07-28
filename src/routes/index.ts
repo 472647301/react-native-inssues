@@ -5,12 +5,14 @@ import Home from '../views/Home'
 import Detail from '../views/Detail'
 import WebView from '../views/WebView'
 import HighChart from '../views/HighCharts'
+import KeyBoard from '../views/Keyboard'
 
 const AppNavigator = createStackNavigator({
   Home: Home,
   Detail: Detail,
   WebView: WebView,
-  HighChart: HighChart
+  HighChart: HighChart,
+  KeyBoard: KeyBoard
 })
 
 export default createAppContainer(AppNavigator)

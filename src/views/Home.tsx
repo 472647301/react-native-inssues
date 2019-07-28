@@ -31,6 +31,10 @@ class HomeScreen extends React.Component<IHome> {
           title="Change MobX Number"
           onPress={() => Timer.changeNumber()}
         />
+        <Button
+          title="Go to KeyBoard"
+          onPress={() => navigation.navigate('KeyBoard')}
+        />
       </View>
     )
   }
