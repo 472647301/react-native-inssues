@@ -5329,10 +5329,10 @@ react-native-byron-highcharts@^1.0.0:
   resolved "https://registry.yarnpkg.com/react-native-byron-highcharts/-/react-native-byron-highcharts-1.0.0.tgz#8f7e6d56e124042e29fc6f7a2b6392c6e2157094"
   integrity sha512-sTuv5EY9PQ7aUhrUf4UTc1HGrksGejNH6AGnRPmrpZ32u5TuqLc0mg/efkJGstJ7ZxCAO2SKIFUCj6Y8d7b95w==
 
-react-native-byron-kline@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-byron-kline/-/react-native-byron-kline-1.1.0.tgz#c5f1b174feb1a85cd055a2e92fe7492bfca45880"
-  integrity sha512-7zguFJ2gKIP6N44/LyH3WdKorB9nMtsVpfdXbnLVQBm1GCgXAyzkw4Uins3/TIZ8melCzTOVGQmCUs3o0s6vgg==
+react-native-byron-kline@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/react-native-byron-kline/-/react-native-byron-kline-1.1.5.tgz#27158e7ac7722b2c9ba7b925d2633e57974995fa"
+  integrity sha512-cincH+O6/nECMR/RmjNG7qMm5j2cH/wlsNhCYRpdodJI6dbS5vPv7Dmf4NMwkxHvllpB9oZjdVVjpo8kHFoa3A==
 
 react-native-byron-rsa@^1.0.0:
   version "1.0.0"

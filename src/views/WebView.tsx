@@ -49,7 +49,7 @@ class WebViewScreen extends React.Component<IWebView> {
         symbol,
         interval,
         pricescale,
-        // isDebug: true
+        isDebug: true
       })
       this.chart.injectJavaScript(msg)
     }
@@ -77,7 +77,9 @@ class WebViewScreen extends React.Component<IWebView> {
           .post(`${baseUrl}/v1/exchange/ticker/getScaleByDate`, {
             from: msg.data.from,
             symbol: msg.data.symbol,
-            to: msg.data.to,
+            to: msg.data.to
+              ? msg.data.to + 6000 * Number(msg.data.resolution)
+              : 0,
             type: `MIN_${msg.data.resolution}`
           })
           .catch(err => console.log('--', JSON.stringify(err)))
@@ -133,6 +135,36 @@ class WebViewScreen extends React.Component<IWebView> {
       case 'switchingCycle':
         this.subList[`MIN_${msg.data.old}`].unsubscribe()
         break
+      case 'fetchMoreData':
+        const _res = await axios
+          .post(`${baseUrl}/v1/exchange/ticker/getScaleByDate`, {
+            from: msg.data.from,
+            symbol: msg.data.symbol,
+            to: msg.data.to,
+            type: `MIN_${msg.data.resolution}`
+          })
+          .catch(err => console.log('--', JSON.stringify(err)))
+        if (_res && _res.data && _res.data.data) {
+          const kline: Array<Bar> = []
+          const list: Array<IGetScaleByDate> = _res.data.data
+          list.forEach(item => {
+            const _date = moment(item.date, 'YYYY-MM-DD HH:mm:ss')
+            const time = Number(_date.format('X')) * 1000
+            kline.push({
+              time: time,
+              open: item.open,
+              high: item.high,
+              low: item.low,
+              close: item.close,
+              volume: item.volume
+            })
+          })
+          const klineData = sendMessageHtml('renderChartMoreData', {
+            kline: kline
+          })
+          this.chart && this.chart.injectJavaScript(klineData)
+        }
+        break
     }
   }
 
@@ -148,7 +180,7 @@ class WebViewScreen extends React.Component<IWebView> {
   }
 
   public onSwitchingCycle() {
-    const options = ['分时', '1', '3', '5', '15', '取消']
+    const options = ['分时', '1', '5', '15', '30', '取消']
     ActionSheetIOS.showActionSheetWithOptions(
       {
         cancelButtonIndex: 5,
