@@ -1,0 +1,21 @@
+{
+  "name": "RNByronKeyboard",
+  "version": "1.0.7",
+  "summary": "react-native-byron-keyboard",
+  "license": "MIT",
+  "authors": "byron <472647301@qq.com>",
+  "homepage": "https://github.com/472647301/react-native-byron-keyboard#readme",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/472647301/react-native-byron-keyboard.git",
+    "tag": "v1.0.7"
+  },
+  "source_files": "ios/**/*.{h,m}",
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

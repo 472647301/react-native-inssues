@@ -35,6 +35,8 @@ target 'MyApp' do
 
   pod 'react-native-webview', :path => '../node_modules/react-native-webview'
 
+  pod 'RNByronKeyboard', :path => '../node_modules/react-native-byron-keyboard'
+
   target 'MyAppTests' do
     inherit! :search_paths
     # Pods for testing

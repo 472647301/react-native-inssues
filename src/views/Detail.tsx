@@ -54,8 +54,8 @@ class DetailScreen extends React.Component<IDetail> {
         <Text>Detail Screen</Text>
         <TextInput
           style={{ width: 200, borderWidth: 1, borderColor: '#eee' }}
-          onFocus={() => Keyboard.dismiss()}
           value={this.state.number}
+          onChangeText={t => this.setState({ number: t })}
         />
         <Button
           title="Go to WebView"

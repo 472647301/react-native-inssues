@@ -1,9 +1,9 @@
 import * as React from 'react'
 import { View, Text } from 'react-native'
-// import {
-//   installByronKeyboard,
-//   ByronTextInput
-// } from 'react-native-byron-keyboard'
+import {
+  installByronKeyboard,
+  ByronTextInput
+} from 'react-native-byron-keyboard'
 
 type IKeyboard = {}
 class Keyboard extends React.PureComponent<IKeyboard> {
@@ -27,7 +27,7 @@ class Keyboard extends React.PureComponent<IKeyboard> {
         <View style={{ height: 50 }} />
         <Text style={{ textAlign: 'center' }}>Keyboard View</Text>
         <View style={{ height: 30 }} />
-        {/* <ByronTextInput
+        <ByronTextInput
           value={username}
           onChangeText={t => this.setState({ username: t })}
           style={{ width: 200, borderWidth: 1, borderColor: '#eee' }}
@@ -37,7 +37,7 @@ class Keyboard extends React.PureComponent<IKeyboard> {
           value={password}
           onChangeText={t => this.setState({ password: t })}
           style={{ width: 200, borderWidth: 1, borderColor: '#eee' }}
-        /> */}
+        />
       </View>
     )
   }
