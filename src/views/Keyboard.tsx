@@ -13,7 +13,7 @@ class Keyboard extends React.PureComponent<IKeyboard> {
   }
 
   public componentDidMount() {
-    // installByronKeyboard({ onNext: this.onClickNext.bind(this) })
+    installByronKeyboard({ onNext: this.onClickNext.bind(this) })
   }
 
   public onClickNext() {
