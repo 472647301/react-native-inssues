@@ -165,6 +165,13 @@ class WebViewScreen extends React.Component<IWebView> {
           this.chart && this.chart.injectJavaScript(klineData)
         }
         break
+      // case 'closeLoading':
+      //   const __chart = sendMessageHtml('chart', {
+      //     event: 'setChartType',
+      //     data: 2
+      //   })
+      //   this.chart && this.chart.injectJavaScript(__chart)
+      //   break
     }
   }
 
