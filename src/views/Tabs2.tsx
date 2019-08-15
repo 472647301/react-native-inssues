@@ -16,7 +16,13 @@ class HomeScreen extends React.Component<IHome> {
     const { Timer } = this.props
     const { navigation } = this.props
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <View
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+          backgroundColor: '#2BBDF5'
+        }}
+      >
         <Text>MobX Number: {Timer.number}</Text>
         <Text>Home Screen</Text>
         <Button
@@ -34,10 +40,6 @@ class HomeScreen extends React.Component<IHome> {
         <Button
           title="Go to KeyBoard"
           onPress={() => navigation.navigate('KeyBoard')}
-        />
-        <Button
-          title="Go to Main(Tab1)"
-          onPress={() => navigation.navigate('Tab1')}
         />
       </View>
     )

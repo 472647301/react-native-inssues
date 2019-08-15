@@ -21,13 +21,12 @@ declare global {
   }
 }
 
-
 type IApp = {}
 class App extends React.Component<IApp> {
   public render() {
     return (
       <Provider {...stores}>
-        <View style={{ flex: 1 }}>
+        <View style={{ flex: 1, backgroundColor: '#000' }}>
           <Routes />
         </View>
       </Provider>
